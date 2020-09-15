@@ -18,5 +18,7 @@ namespace AdventureGameTest
 		//people
 
 		//goal
+
+		//intro
 	}
 }
