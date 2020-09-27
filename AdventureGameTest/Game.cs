@@ -34,7 +34,6 @@ namespace AdventureGameTest
 			//1
 			var one = new StoryNode()
 			{
-				Parents = null,
 				Intro = "Welcome to node 1. Would you like to continue?",
 				GoalAnswer = "yes",
 				StoryNodeName = "Welcome",
@@ -48,18 +47,39 @@ namespace AdventureGameTest
 			};
 
 			//3
+			var three = new StoryNode()
+			{
+
+			};
 
 			//4
+			var four = new StoryNode()
+			{
+
+			};
 
 			//5
+			var five = new StoryNode()
+			{
+
+			};
 
 			//6
+			var six = new StoryNode()
+			{
+
+			};
 
 			//7
+			var seven = new StoryNode()
+			{
+
+			};
 
 			//create family
 
 			//add to created list
+			createdNodes.AddRange(new List<StoryNode>() { one, two, three, four, five, six, seven });
 
 			return createdNodes;
 		}
@@ -75,7 +95,7 @@ namespace AdventureGameTest
 			StoryNode newNode;
 			string input = "";
 
-			if(Console.ReadLine().Contains(node.GoalAnswer) || node.Visited && node.IsCompleted) //test this
+			if(Console.ReadLine().Contains(node.GoalAnswer) || node.Visited && node.IsCompleted) //TODO: test this
 			{
 				Console.Write("Choose your next path");
 				foreach (var child in node.Children)

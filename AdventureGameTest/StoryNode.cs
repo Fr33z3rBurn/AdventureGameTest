@@ -31,6 +31,8 @@ namespace AdventureGameTest
 
 		public string GoalAnswer { get; set; }
 
+		//commands
+
 		public StoryNode()
 		{
 			Parents = new List<StoryNode>();
